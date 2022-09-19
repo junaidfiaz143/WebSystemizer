@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inventors.jd.keeper.activities.AddPostActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/line_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="TITLE"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:hint="enter title"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/edtUrl"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/line_border"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="URL"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edtUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:hint="enter url"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentArea"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/raleway_bold"
+        android:text="save"
+        android:textColor="#fff" />
+
+</RelativeLayout>
